@@ -121,6 +121,10 @@ body{
         font-size: 12px;
     }
 
+    .main-title{
+        font-size: 2rem;
+    }
+    
     .cards{
         padding:1.5rem;
         grid-template-columns: repeat(2,1fr);
