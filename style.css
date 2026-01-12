@@ -6,18 +6,21 @@
     padding: 0;
 }
 
-body{
-    font-family: 'Poppins', sans-serif;
-}
 :root{
     --title-bold: hsl(234, 12%, 34%);
     --title-light:hsl(212, 6%, 44%);
     --text-color: hsl(212, 6%, 44%);
-
+    --bg-color: hsl(0, 0%, 98%);
     --Red: hsl(0, 78%, 62%);
     --Cyan: hsl(180, 62%, 55%);
     --Orange: hsl(34, 97%, 64%);
     --Blue: hsl(212, 86%, 64%);
+}
+
+
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--bg-color);
 }
 
 .attribution {
@@ -124,7 +127,7 @@ body{
     .main-title{
         font-size: 2rem;
     }
-    
+
     .cards{
         padding:1.5rem;
         grid-template-columns: repeat(2,1fr);
