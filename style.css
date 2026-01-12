@@ -45,6 +45,7 @@ body{
     margin-block: 1rem;
     color: var(--title-light);
     font-weight: 400;
+    font-size: 2.5rem;
 }
 
 .main-title > span{
@@ -55,8 +56,9 @@ body{
 .cards{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
     align-items: center;
+    justify-content: center;
     padding: 2rem;
     gap: 1.5rem;
 }
@@ -112,4 +114,47 @@ body{
 
 .cards > .card:last-child{
     border-top:2px solid var(--Blue);
+}
+
+@media screen and (max-width:920px){
+    :root{
+        font-size: 12px;
+    }
+
+    .cards{
+        padding:1.5rem;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: repeat(2,1fr);
+    }
+
+    .description{
+        max-width: 80%;
+    }
+    .inner-section{
+        padding: 0;
+        grid-row: span 2;
+    }
+}
+
+
+@media screen and (max-width:375px){
+    :root{
+        font-size: 10px;
+    }
+
+    .main-title{
+        font-size: 2rem;
+    }
+
+    .cards{
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+    }
+
+    .description{
+        max-width: 80%;
+    }
+    .inner-section{
+        padding: 0;
+    }
 }
